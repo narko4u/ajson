@@ -28,4 +28,4 @@ __all__ = [
     "compile_file",
     "compile_string",
 ]
-__version__ = "0.1.0"
+__version__ = "0.1.1"
