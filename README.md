@@ -7,6 +7,8 @@
 
 **A superset of JSON purpose-built for autonomous agent communication, with deterministic compilation to canonical JSON.**
 
+> **📦 PyPI package:** `ajson-spec` — installed via `pip install ajson-spec`
+
 [![PyPI version](https://img.shields.io/pypi/v/ajson-spec.svg)](https://pypi.org/project/ajson-spec/)
 [![Tests](https://img.shields.io/badge/tests-25%20passing-brightgreen)](https://github.com/narko4u/ajson)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
