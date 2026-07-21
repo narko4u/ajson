@@ -229,6 +229,18 @@ This project follows the [ACI Code of Conduct](https://aci-spec.org/code-of-cond
 
 ---
 
+## 🍻 Buy the Empire a Pint
+
+If AJSON saved your agents from YAML hell and JSON purgatory, buy the Empire a pint. We like to split the G.
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/empirelabs)
+
+**Pay what you want.** No tiers, no rewards, no strings. Just a cold pint and a thank you from the Empire.
+
+Every donation helps keep this project sovereign, dependency-free, and maintained on Empire time.
+
+---
+
 ## License
 
 AJSON is open source under the MIT License. See [LICENSE](LICENSE) for details.
