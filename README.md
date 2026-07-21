@@ -205,11 +205,15 @@ AJSON gives you the ergonomics of YAML with the determinism and agent-compatibil
 
 ## Integration with Empire Labs Stack
 
-AJSON is the authoring format for the [Empire Labs](https://empirelabs.com.au) agent ecosystem:
+AJSON is the authoring format for the **Empire Stack** — a complete stack for autonomous agent commerce:
 
-- **[AIP](https://github.com/narko4u/aip-spec)** — Agent Interaction Protocol (contract templates written in AJSON)
-- **[WitnessOS](https://empirelabs.com.au)** — Agent governance and compliance (evidence receipts in AJSON)
-- **[ACI](https://aci-spec.org)** — Autonomous Company Interface (capability descriptions in AJSON)
+| Layer | Project | What It Does |
+|-------|---------|-------------|
+| ✍️ **Author** | **[AJSON](https://github.com/narko4u/ajson)** ← you are here | Write manifests with comments, refs, multi-line — compiles to canonical JSON |
+| 🔍 **Discover** | **[ACI](https://github.com/narko4u/aci-spec)** | Autonomous Company Interface — describes orgs to agents (who you are, what you offer) |
+| 🤝 **Interact** | **[AIP](https://github.com/narko4u/aip-spec)** | Agent Interaction Protocol — negotiates contracts and executes interactions |
+
+→ **[ACI](https://github.com/narko4u/aci-spec)** discovers, **[AIP](https://github.com/narko4u/aip-spec)** negotiates, **[AJSON](https://github.com/narko4u/ajson)** writes it all down.
 
 ---
 
