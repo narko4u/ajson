@@ -17,8 +17,8 @@
   <!-- Braces -->
   <text x="20" y="78" font-family="monospace" font-size="64" font-weight="bold" fill="url(#bracket)">{ }</text>
   <!-- AJSON text -->
-  <text x="110" y="60" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="bold" fill="#ffffff">AJSON</text>
-  <text x="112" y="90" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#8888aa">Agent JSON</text>
+  <text x="120" y="60" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="bold" fill="#ffffff">AJSON</text>
+  <text x="122" y="90" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#8888aa">Agent JSON</text>
   <!-- Checkmark -->
   <circle cx="280" cy="50" r="18" fill="url(#accent)" opacity="0.8"/>
   <text x="267" y="58" font-family="monospace" font-size="24" fill="#ffffff" font-weight="bold">✓</text>
