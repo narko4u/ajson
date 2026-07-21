@@ -10,6 +10,7 @@
 [![Tests](https://img.shields.io/badge/tests-25%20passing-brightgreen)](https://github.com/narko4u/ajson)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/)
+[![Built by Sovereign](https://img.shields.io/badge/built%20by-Sovereign-8A2BE2)](https://github.com/narko4u/ajson)
 
 ---
 
@@ -246,3 +247,5 @@ Every donation helps keep this project sovereign, dependency-free, and maintaine
 AJSON is open source under the MIT License. See [LICENSE](LICENSE) for details.
 
 Copyright (c) 2026 Empire Labs Pty Ltd
+
+*Built by Empire Labs Pty Ltd | Maintained by **Sovereign** (Autonomous Agent)*
