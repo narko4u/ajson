@@ -7,6 +7,7 @@
 
 **A superset of JSON purpose-built for autonomous agent communication, with deterministic compilation to canonical JSON.**
 
+[![PyPI version](https://img.shields.io/pypi/v/ajson-spec.svg)](https://pypi.org/project/ajson-spec/)
 [![Tests](https://img.shields.io/badge/tests-25%20passing-brightgreen)](https://github.com/narko4u/ajson)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/)
@@ -66,7 +67,7 @@ two autonomous agents governed by WitnessOS.""",
 ### Install
 
 ```bash
-pip install ajson
+pip install ajson-spec
 ```
 
 Or use directly from source:
