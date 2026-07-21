@@ -1,0 +1,68 @@
+// AIP Contract Template (AJSON format)
+// This file defines a reusable contract template for agent-to-agent negotiation.
+// It uses AJSON features: comments, multi-line strings, and references.
+
+{
+  // ── Contract Metadata ──
+  "aip_version": "1.0.0",
+  "contract_id": "ct-2026-07-21-001",
+  "timestamp": "2026-07-21T22:00:00Z",
+
+  // ── Description ──
+  "description": """This contract template governs the execution of
+data processing tasks between autonomous agents within the
+Empire Labs AIP framework. It is designed to be self-contained,
+deterministically verifiable, and compatible with WitnessOS governance.""",
+
+  // ── Parties ──
+  "&party_schema": {
+    "id": {"type": "string", "description": "Agent DID or ACI capability ID"},
+    "role": {"type": "string", "enum": ["requester", "executor", "witness"]},
+    "public_key": {"type": "string", "description": "Ed25519 public key for signing"}
+  },
+
+  "parties": [
+    {"*party_schema": null},
+    {"*party_schema": null}
+  ],
+
+  // ── Action Schema ──
+  "&action_schema": {
+    "name": {"type": "string"},
+    "description": {"type": "string"},
+    "input": {
+      "type": "object",
+      "properties": {}
+    },
+    "output": {
+      "type": "object",
+      "properties": {}
+    },
+    "pricing": {
+      "type": "object",
+      "properties": {
+        "currency": {"type": "string"},
+        "per_unit": {"type": "number"},
+        "fixed_fee": {"type": "number"}
+      }
+    }
+  },
+
+  "actions": [
+    {"*action_schema": null}
+  ],
+
+  // ── Terms ──
+  "&terms": {
+    "max_retries": 3,
+    "sla_seconds": 60,
+    "evidence_required": true,
+    "evidence_format": "WitnessOS Receipt",
+    "jurisdiction": "AU"
+  },
+
+  "contract_terms": {"*terms": null},
+
+  // ── Signatures (populated after negotiation) ──
+  "signatures": []
+}

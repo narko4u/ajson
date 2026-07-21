@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ajson"
+version = "0.1.0"
+description = "Agent JSON — a superset of JSON for agent-to-agent manifests"
+authors = [
+    {name = "Empire Labs Pty Ltd", email = "contact@empirelabs.com.au"}
+]
+license = {text = "MIT"}
+requires-python = ">=3.9"
+
+[project.urls]
+Homepage = "https://github.com/narko4u/ajson"
+Documentation = "https://github.com/narko4u/ajson#readme"
+
+[project.scripts]
+ajson = "ajson.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ajson*"]

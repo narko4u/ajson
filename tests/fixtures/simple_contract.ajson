@@ -1,0 +1,38 @@
+// AIP Simple Contract (AJSON Format)
+// This demonstrates all AJSON features: comments, multi-line, references.
+
+{
+  "aip_version": "1.0.0",
+  "contract_name": "Simple Data Process",
+  "timestamp": "2026-07-21T22:30:00Z",
+
+  "description": """A simple data processing contract between
+two autonomous agents. Terms are reusable and deterministic.""",
+
+  // Reusable terms template
+  "&terms": {
+    "max_retries": 3,
+    "sla_seconds": 60,
+    "jurisdiction": "AU"
+  },
+
+  // Reusable party template
+  "&party": {
+    "did": "did:aci:empirelabs:agent",
+    "role": "agent",
+    "public_key": "ed25519:abc123..."
+  },
+
+  "parties": [
+    {"*party": null},      // Requester
+    {"*party": null}       // Executor
+  ],
+
+  "contract_terms": {"*terms": null},
+
+  /* The SLA and retry limits are defined once, used everywhere */
+  "slas": [
+    {"*terms": null},
+    {"*terms": null}
+  ]
+}
