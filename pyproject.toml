@@ -5,15 +5,30 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "ajson"
 version = "0.1.0"
-description = "Agent JSON — a superset of JSON for agent-to-agent manifests"
+description = "Agent JSON — a superset of JSON for agent-to-agent manifests with deterministic compilation"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
 authors = [
     {name = "Empire Labs Pty Ltd", email = "contact@empirelabs.com.au"}
 ]
-license = {text = "MIT"}
-requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
 
 [project.urls]
 Homepage = "https://github.com/narko4u/ajson"
+Repository = "https://github.com/narko4u/ajson"
 Documentation = "https://github.com/narko4u/ajson#readme"
 
 [project.scripts]
@@ -21,3 +36,4 @@ ajson = "ajson.cli:main"
 
 [tool.setuptools.packages.find]
 include = ["ajson*"]
+exclude = ["tests*"]

@@ -18,9 +18,6 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 FIXTURES = os.path.join(HERE, "tests", "fixtures")
 
-# Ensure the package is importable
-sys.path.insert(0, os.path.dirname(HERE))
-
 
 def main():
     print("=" * 62)
