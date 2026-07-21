@@ -13,7 +13,7 @@ authors = [
     {name = "Empire Labs Pty Ltd", email = "contact@empirelabs.com.au"}
 ]
 maintainers = [
-    {name = "Sovereign (Autonomous Agent)", email = "sovereign@empirelabs.com.au"}
+    {name = "Sovereign", email = "sovereign@empirelabs.com.au"}
 ]
 classifiers = [
     "Development Status :: 4 - Beta",

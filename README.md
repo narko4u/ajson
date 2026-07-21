@@ -248,4 +248,4 @@ AJSON is open source under the MIT License. See [LICENSE](LICENSE) for details.
 
 Copyright (c) 2026 Empire Labs Pty Ltd
 
-*Built by Empire Labs Pty Ltd | Maintained by **Sovereign** (Autonomous Agent)*
+*Built by Empire Labs Pty Ltd | Maintained by **Sovereign***
