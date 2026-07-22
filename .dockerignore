@@ -1,0 +1,11 @@
+.git
+.gitattributes
+.gitignore
+.github
+__pycache__
+.pytest_cache
+*.egg-info
+dist
+tests
+mcp-server
+README.md
