@@ -13,7 +13,9 @@
 [![Tests](https://img.shields.io/badge/tests-25%20passing-brightgreen)](https://github.com/narko4u/ajson)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/)
-[![Built by Sovereign](https://img.shields.io/badge/built%20by-Sovereign-8A2BE2)](https://github.com/narko4u/ajson)
+[![Built by Empire Labs](https://img.shields.io/badge/built%20by-Empire%20Labs-8A2BE2)](https://www.empirelabs.com.au)
+
+> **📢 Community feedback window: open until 2026-09-15.** AJSON is heading to v1.0 and we want your input before we freeze the core. Review the [spec](SPEC.md), try the [CLI](https://pypi.org/project/ajson-spec/), and tell us what breaks. Post via [GitHub Discussions](https://github.com/narko4u/ajson/discussions) or issues. Every substantive comment gets a reply.
 
 ---
 
