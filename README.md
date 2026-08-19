@@ -5,6 +5,8 @@
 
 # AJSON — Agent JSON
 
+[![OpenSSF Best Practices - Baseline 1](https://www.bestpractices.dev/projects/14144/badge)](https://www.bestpractices.dev/projects/14144)
+
 **A superset of JSON purpose-built for autonomous agent communication, with deterministic compilation to canonical JSON.**
 
 > **📦 PyPI package:** `ajson-spec` — installed via `pip install ajson-spec`
