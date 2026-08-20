@@ -77,4 +77,7 @@ jobs:
       - name: Run OSV-Scanner
         uses: google/osv-scanner/actions/scanner@v1
         with:
-          fail-on-vuln: true
+          scan-args: |-
+            --recursive
+            .
+            --fail-on-vuln
