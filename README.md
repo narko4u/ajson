@@ -265,3 +265,31 @@ Copyright (c) 2026 Empire Labs Pty Ltd
 ---
 
 <sub>Part of the [WitnessOS launch family](https://github.com/narko4u/witnessos): [witnessos-alpha](https://github.com/narko4u/witnessos-alpha) · [witnessos-compliance](https://github.com/narko4u/witnessos-compliance) · [eu-ai-act-compliance-grade](https://github.com/narko4u/eu-ai-act-compliance-grade) · [witnessos-rogue-agent-audit](https://github.com/narko4u/witnessos-rogue-agent-audit) · [witnessos-agent-asset-registry](https://github.com/narko4u/witnessos-agent-asset-registry) · [witnessos-verifier](https://github.com/narko4u/witnessos-verifier) · [agent-interaction-specs](https://github.com/narko4u/agent-interaction-specs) · [aci-spec](https://github.com/narko4u/aci-spec) · [aip-spec](https://github.com/narko4u/aip-spec) · [ajson](https://github.com/narko4u/ajson) — [Empire Labs Pty Ltd](https://www.empirelabs.com.au)</sub>
+## Dependencies
+
+Runtime dependencies are declared in `pyproject.toml` (Python 3.10+). The
+dependency set is kept minimal. SCA is enforced in CI via OSV-Scanner.
+
+## Building from source
+
+```sh
+git clone https://github.com/narko4u/ajson.git
+cd ajson
+python -m venv .venv && source .venv/bin/activate
+pip install -e .
+```
+
+## Verifying releases
+
+Release assets (wheel, source distribution, `sbom.cdx.json`, `SHA256SUMS`,
+plus the published Docker image) are attached to the GitHub release. To
+verify integrity and authorship:
+
+1. Download `SHA256SUMS` and the assets for the release tag.
+2. Verify checksums: `sha256sum -c SHA256SUMS`
+3. Verify the Sigstore signature on an asset (keyless, OIDC-bound to this
+   repository's `release.yml` workflow):
+
+   ```
+   cosign verify-blob --certificate <asset>.pem --signature <asset>.sig --certificate-identity "https://github.com/narko4u/ajson/.github/workflows/release.yml@refs/tags/v*" --certificate-oidc-issuer "https://token.actions.githubusercontent.com" <asset>
+   ```
