@@ -79,7 +79,7 @@ jobs:
       - name: Generate checksums
         run: |
           cd dist
-          sha256sum * > ../SHA256SUMS
+          sha256sum -- * > ../SHA256SUMS
           cd ..
           sha256sum sbom.cdx.json >> SHA256SUMS
 
