@@ -87,10 +87,12 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.ref.outputs.tag }}
+          # dist/* already matches the .sig and .pem files. Listing them again
+          # made the action upload each asset twice in one run, which 404s on
+          # the follow-up asset-metadata update ("Not Found - update-a-release-asset")
+          # and failed the whole release job. Seen on 20 Aug 2026 (registry + aci-spec).
           files: |
             dist/*
-            dist/*.sig
-            dist/*.pem
             sbom.cdx.json
             SHA256SUMS
           draft: false
