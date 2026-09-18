@@ -14,7 +14,7 @@ jobs:
     name: Workflows lint (actionlint)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       # Pinned + checksum-verified through the Go module proxy (sum.golang.org).
       # Catches the class of bug that silently killed release runs on 20 Aug 2026:
       # an invalid expression (${{ GITHUB_REF_NAME }}) makes GitHub reject the whole
@@ -29,7 +29,7 @@ jobs:
   dco:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
       - name: Verify all commits carry Signed-off-by (DCO)
@@ -60,8 +60,8 @@ jobs:
       matrix:
         python-version: ["3.10", "3.11", "3.12"]
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python-version }}
       - name: Install package + test deps
@@ -80,7 +80,7 @@ jobs:
       security-events: write
       actions: read
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: github/codeql-action/init@v3
         with:
           languages: python
@@ -89,7 +89,7 @@ jobs:
   osv-scanner:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Run OSV-Scanner
         uses: google/osv-scanner/actions/scanner@v1
         with:
