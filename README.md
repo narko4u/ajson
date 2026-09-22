@@ -233,6 +233,16 @@ AJSON is the authoring format for the **Empire Stack** — a complete stack for 
 
 ---
 
+## Acknowledgements
+
+This implementation uses the Python standard library only. There are no
+third-party runtime dependencies, so there is no upstream code to attribute.
+
+AJSON is an original design by Empire Labs Pty Ltd. It has not been reviewed,
+approved or certified by any standards body.
+
+---
+
 ## Contributing
 
 Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
